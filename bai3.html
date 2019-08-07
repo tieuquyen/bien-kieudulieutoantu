@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>dientichhinhtron</title>
+</head>
+<body>
+nhap ban kinh hinh tron :<input id="radius" type="number">
+<br>
+<button onclick="dientich()" type="button">dientich</button>
+dien tich hinh tron la : <span id="S">0</span>
+<br>
+<script type="text/javascript">
+    function dientich() {
+        let radius= document.getElementById('radius').value;
+        let constPI = 3.14;
+        let S= radius*radius*3.14;
+        document.getElementById('S').innerHTML=S;
+    }
+
+</script>
+</body>
+</html>

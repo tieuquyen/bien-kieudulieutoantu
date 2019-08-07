@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>title</title>
+</head>
+<body>
+<input id="nhap" type="text">
+<select id="from">
+    <option value="">Celius</option>
+</select>
+
+<select id="to">
+    <option value="">Fahrenheit</option>
+</select>
+<button onclick="convert()" type="button">convert</button>
+kq<span id="result"></span>
+<script>
+function convert() {
+    let nhap = document.getElementById('nhap').value;
+    let from = document.getElementById('from').value;
+    let to = document.getElementById('to').value;
+    let result =nhap *from /to;
+    document.getElementById('result').innerHTML=result;
+}
+</script>
+</body>
+</html>

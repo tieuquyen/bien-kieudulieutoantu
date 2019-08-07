@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>biendulieutoantu</title>
+</head>
+<body>
+Điểm lý:<input id="diemly" type="number">
+<br>
+Điểm hóa:<input id="diemhoa" type="number">
+<br>
+Điểm Sinh:<input id="diemsinh" type="number">
+<br>
+<button onclick="tong()" type="button">tong</button>
+<br>
+kq:<span id="result" ></span>
+
+<script>
+    function tong() {
+        let diemly =Number (document.getElementById('diemly').value);
+        let diemhoa =Number (document.getElementById('diemhoa').value);
+        let diemsinh =Number (document.getElementById('diemsinh').value);
+        let result = diemly +diemhoa  +diemsinh;
+        document.getElementById("result").innerHTML = result;
+    }
+</script>
+</body>
+</html>

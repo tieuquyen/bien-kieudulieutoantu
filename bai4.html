@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>chuvi</title>
+</head>
+<body>
+nhap ban kinh duong tron:<input id ="radius" type="number">
+<br>
+<button onclick="chuvi()" type="button">chuvi</button>
+<br>
+chu vi hinh tron la:<span id="C">0</span>
+<script type="text/javascript">
+    function chuvi() {
+        var radius = document.getElementById('radius').value;
+        var C = 2*radius*3.14;
+        document.getElementById('C').innerHTML=C;
+        
+    }
+    
+</script>
+</body>
+</html>
